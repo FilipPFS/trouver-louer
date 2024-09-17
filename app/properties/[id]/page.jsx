@@ -1,6 +1,7 @@
 import PropertyDetails from "@/components/PropertyDetails";
 import PropertyHeaderImg from "@/components/PropertyHeaderImg";
 import PropertyImages from "@/components/PropertyImages";
+import { convertToOject } from "@/config/convertToObject";
 import connectToDb from "@/config/database"
 import Property from "@/models/Property";
 import Link from "next/link";
@@ -10,9 +11,8 @@ const PropertyPage = async ({ params }) => {
 
     await connectToDb();
 
-    const property = await Property.findById(params.id).lean();
-
-    console.log(property);
+    const propertyDoc = await Property.findById(params.id).lean();
+    const property = convertToOject(propertyDoc);
 
     return (
         <>
