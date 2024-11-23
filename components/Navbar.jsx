@@ -71,7 +71,7 @@ const Navbar = () => {
                                 alt="PropertyPulse"
                             />
                             <span className="hidden md:block text-white text-2xl font-bold ml-2"
-                            >PropertyPulse</span
+                            >Trouver-Louer</span
                             >
                         </Link>
                         {/* <!-- Desktop Menu Hidden below md screens --> */}
@@ -85,7 +85,7 @@ const Navbar = () => {
                                 <Link
                                     href="/properties"
                                     className={`${pathname === "/properties" ? 'bg-black' : ''} text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
-                                >Propriétés</Link
+                                >Locations</Link
                                 >
                                 {session && (
                                     <Link
@@ -189,7 +189,7 @@ const Navbar = () => {
                                                     tabIndex="-1"
                                                     id="user-menu-item-0"
                                                     onClick={() => setIsProfileOpen(false)}
-                                                >Your Profile</Link
+                                                >Mon compte</Link
                                                 >
                                                 <Link
                                                     href="/properties/saved"
@@ -198,7 +198,7 @@ const Navbar = () => {
                                                     tabIndex="-1"
                                                     id="user-menu-item-2"
                                                     onClick={() => setIsProfileOpen(false)}
-                                                >Saved Properties</Link
+                                                >Savuegardé</Link
                                                 >
                                                 <button
                                                     className="block px-4 py-2 text-sm text-gray-700"
@@ -207,7 +207,7 @@ const Navbar = () => {
                                                     id="user-menu-item-2"
                                                     onClick={signOut}
                                                 >
-                                                    Sign Out
+                                                    Se déconnecter
                                                 </button>
                                             </div>
                                         )

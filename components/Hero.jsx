@@ -10,10 +10,10 @@ const Hero = () => {
                     <h1
                         className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl"
                     >
-                        Trouver la parfaite location
+                        Trouver la location parfaite
                     </h1>
                     <p className="my-4 text-xl text-white">
-                        Découvrez la propriété parfaite qui correspond à vos besoins.
+                        Découvrez les locations qui correspondent parfaitement à vos besoins.
                     </p>
                 </div>
                 <PropertySearchForm />

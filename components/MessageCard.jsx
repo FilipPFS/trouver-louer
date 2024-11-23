@@ -55,7 +55,7 @@ const MessageCard = ({ message }) => {
                     <span className="text-blue-500"
                     > {message.phone}</span>
                 </li>
-                <li><strong>Received:</strong> {new Date(message.createdAt).toLocaleDateString()}</li>
+                <li><strong>Envoyé le:</strong> {new Date(message.createdAt).toLocaleDateString()}</li>
             </ul>
             <button
                 onClick={handleReadClick}
@@ -64,7 +64,7 @@ const MessageCard = ({ message }) => {
                 {isSeen ? "Marquer comme nouveau" : "Marquer comme lu"}
             </button>
             <button className="mt-4 bg-red-500 text-white py-1 px-3 rounded-md" onClick={handleDeleteClick}>
-                Delete
+                Supprimer
             </button>
         </div>
     )

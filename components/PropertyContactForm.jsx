@@ -29,7 +29,7 @@ const PropertyContactForm = ({ property }) => {
 
     return (
         session && <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-bold mb-6">Contact Property Manager</h3>
+            <h3 className="text-xl font-bold mb-6">Contact le propriétaire</h3>
             <form action={formAction}>
                 <div className="mb-4">
                     <input
@@ -48,14 +48,14 @@ const PropertyContactForm = ({ property }) => {
                         className="block text-gray-700 text-sm font-bold mb-2"
                         htmlFor="name"
                     >
-                        Name:
+                        Nom:
                     </label>
                     <input
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         id="name"
                         name="name"
                         type="text"
-                        placeholder="Enter your name"
+                        placeholder="Votre nom"
                         required
                     />
                 </div>
@@ -71,7 +71,7 @@ const PropertyContactForm = ({ property }) => {
                         id="email"
                         name="email"
                         type="email"
-                        placeholder="Enter your email"
+                        placeholder="Votre email"
                         required
                     />
                 </div>
@@ -80,14 +80,14 @@ const PropertyContactForm = ({ property }) => {
                         className="block text-gray-700 text-sm font-bold mb-2"
                         htmlFor="phone"
                     >
-                        Phone:
+                        Téléphone
                     </label>
                     <input
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         id="phone"
                         name="phone"
                         type="text"
-                        placeholder="Enter your phone number"
+                        placeholder="Votre numéro de téléphone"
                     />
                 </div>
                 <div className="mb-4">
@@ -101,7 +101,7 @@ const PropertyContactForm = ({ property }) => {
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 h-44 focus:outline-none focus:shadow-outline"
                         id="body"
                         name="body"
-                        placeholder="Enter your message"
+                        placeholder="Votre message"
                     ></textarea>
                 </div>
                 <div>

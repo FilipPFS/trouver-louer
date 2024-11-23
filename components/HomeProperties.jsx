@@ -26,7 +26,7 @@ const HomeProperties = async () => {
                 )}
             </div>
             <div className='w-full flex justify-center'>
-                <Link href={'/properties'}>View all</Link>
+                <Link href={'/properties'} className='mt-3 bg-blue-500 text-white p-3 rounded'>Voir Tous</Link>
             </div>
         </section>
     )

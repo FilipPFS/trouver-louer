@@ -70,15 +70,15 @@ const PropertyDetails = ({ property }) => {
                 >
                     <p className='flex items-center gap-2'>
                         <FaBed /> {property.beds}
-                        <span className="hidden sm:inline">Beds</span>
+                        <span className="hidden sm:inline">Lits</span>
                     </p>
                     <p className='flex items-center gap-2'>
                         <FaBath /> {property.baths}
-                        <span className="hidden sm:inline">Baths</span>
+                        <span className="hidden sm:inline">Salle de bains</span>
                     </p>
                     <p className='flex items-center gap-2'>
                         <FaRulerCombined />
-                        {property.square_feet} <span className="hidden sm:inline">sqft</span>
+                        {property.square_feet} <span className="hidden sm:inline">m2</span>
                     </p>
                 </div>
                 <p className="text-gray-500 mb-4">
@@ -87,7 +87,7 @@ const PropertyDetails = ({ property }) => {
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md mt-6">
-                <h3 className="text-lg font-bold mb-6">Amenities</h3>
+                <h3 className="text-lg font-bold mb-6">Equiepements</h3>
 
                 <ul
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 list-none"

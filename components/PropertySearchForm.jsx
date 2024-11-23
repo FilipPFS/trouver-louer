@@ -30,7 +30,7 @@ const PropertySearchForm = () => {
                 <input
                     type="text"
                     id="location"
-                    placeholder="Enter Location (City, State, Zip, etc"
+                    placeholder="Entrer la location (ville, déptartement, code postale)"
                     value={location}
                     onChange={(e) => setLocation(e.target.value)}
                     className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring focus:ring-blue-500"
@@ -44,22 +44,22 @@ const PropertySearchForm = () => {
                     onChange={(e) => setPropertyType(e.target.value)}
                     className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring focus:ring-blue-500"
                 >
-                    <option value="All">All</option>
-                    <option value="Apartment">Apartment</option>
+                    <option value="All">Tous</option>
+                    <option value="Apartment">Appartement</option>
                     <option value="Studio">Studio</option>
                     <option value="Condo">Condo</option>
-                    <option value="House">House</option>
-                    <option value="Cabin Or Cottage">Cabin or Cottage</option>
-                    <option value="Loft">Loft</option>
-                    <option value="Room">Room</option>
-                    <option value="Other">Other</option>
+                    <option value="House">Maison</option>
+                    <option value="Cabin Or Cottage">Chalet</option>
+                    <option value="Loft">Entrepôt</option>
+                    <option value="Room">Chambre</option>
+                    <option value="Other">Autre</option>
                 </select>
             </div>
             <button
                 type="submit"
                 className="md:ml-4 mt-4 md:mt-0 w-full md:w-auto px-6 py-3 rounded-lg bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-500"
             >
-                Search
+                Rechercher
             </button>
         </form>
     )
